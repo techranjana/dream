@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-//import Main from './Main';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
-import Home from "./Home";
+
 import Blog from "./Blog";
 import Contact from "./Contact";
+import Login  from "./Login";
+import  Home from "./Home";
+
 
 export default function Main() {
   return (
@@ -19,10 +21,15 @@ export default function Main() {
           <Route index element={<Home />} />
           <Route path="blog" element={<Blog />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="Login" element={<Login />} />
+          
+          
          
         </Route>
       </Routes>
+      
     </BrowserRouter>
+    
   );
 }
 
